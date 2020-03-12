@@ -1,0 +1,8 @@
+.teste {
+  background-image: url("../assets/login-wallpaper.jpg");
+  background-color: rgba(0, 0, 0, 0.9);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center;
+  height: 100%;
+}
