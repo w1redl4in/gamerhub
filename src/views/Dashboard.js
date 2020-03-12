@@ -17,7 +17,7 @@ export default function Dashboard() {
           hoverable
           bordered={false}
           title="SHOP"
-          style={{ minWidth: "600px", height: "500px" }}
+          style={{ minWidth: "100%", height: "500px" }}
           headStyle={{ fontSize: "26px" }}
         >
           <Col span={6}>
