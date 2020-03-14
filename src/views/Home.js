@@ -14,6 +14,12 @@ const Home = () => {
     }
   };
 
+  const [form] = Form.useForm();
+
+  const onFinish = values => {
+    console.log(values);
+  };
+
   return (
     <Row type="flex" justify="center" align="middle" className="teste">
       <Col span={6}>
@@ -32,15 +38,15 @@ const Home = () => {
         >
           <Typography.Title>Gamer Hub</Typography.Title>
           <Divider style={{ height: "0" }} />
-          <Form>
-            <Form.Item>
+          <Form onFinish={onFinish} form={form}>
+            <Form.Item name="login">
               <Input placeholder="Login" />
             </Form.Item>
-            <Form.Item>
+            <Form.Item name="pass">
               <Input.Password placeholder="Password" />
             </Form.Item>
             <Form.Item>
-              <Button>Play!</Button>
+              <Button htmlType="submit">Play!</Button>
             </Form.Item>
           </Form>
         </Card>

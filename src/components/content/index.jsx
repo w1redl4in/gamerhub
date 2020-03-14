@@ -14,7 +14,7 @@ export default function Content() {
   };
 
   return (
-    <Row>
+    <Row type="flex" align="middle" justify="center">
       <Col span={24}>
         <Card>
           <Typography.Title type="warning">
