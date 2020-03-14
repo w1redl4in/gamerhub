@@ -1,0 +1,19 @@
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 300px;
+  line-height: 160px;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.ant-carousel .slick-slide img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 100%;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  background: #fff;
+}
