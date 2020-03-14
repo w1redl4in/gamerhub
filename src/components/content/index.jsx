@@ -14,7 +14,12 @@ export default function Content() {
   };
 
   return (
-    <Row type="flex" align="middle" justify="center">
+    <Row
+      type="flex"
+      align="middle"
+      justify="center"
+      style={{ height: "100vh" }}
+    >
       <Col span={24}>
         <Card>
           <Typography.Title type="warning">

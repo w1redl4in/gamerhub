@@ -1,18 +1,15 @@
 import React from "react";
 import { Menu } from "antd";
-import {
-  MailOutlined,
-  AppstoreOutlined,
-  SettingOutlined
-} from "@ant-design/icons";
+import { MailOutlined, AppstoreOutlined } from "@ant-design/icons";
 import { useState } from "react";
+import history from "../../utils/history";
 
 const CustomMenu = () => {
   const [current, setCurrent] = useState("mail");
 
   const handleClick = e => {
-    console.log("click ", e);
     setCurrent(e.key);
+    history.push(`${e.key}`);
   };
 
   return (
@@ -22,11 +19,11 @@ const CustomMenu = () => {
       mode="horizontal"
       style={{ borderRadius: "5px" }}
     >
-      <Menu.Item key="mail">
+      <Menu.Item key="/dashboard">
         <MailOutlined />
         Dashboard
       </Menu.Item>
-      <Menu.Item key="app">
+      <Menu.Item key="/">
         <AppstoreOutlined />
         Shop
       </Menu.Item>

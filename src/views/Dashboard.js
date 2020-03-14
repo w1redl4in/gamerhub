@@ -13,9 +13,6 @@ export default function Dashboard() {
       type="flex"
     >
       <Col span={20}>
-        <Divider style={{ height: "0" }} />
-        <CustomCarousel />
-        <Divider style={{ height: "0" }} />
         <CustomMenu />
         <Divider style={{ height: "0" }} />
         <Content />
